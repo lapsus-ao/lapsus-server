@@ -1,0 +1,3326 @@
+'Dats LapsusAO
+'Obtenidos de Land Of Dragons
+'Redateados, adaptados y modificados por CHOTS
+'Para LapsusAO 2009
+'Reeditados, Balanceado y Modificado por CHOTS
+'Para LapsusAO 2010
+'
+' TIPOS NPC
+' 0====== NPCS COMUNES
+' 1====== PUEDE RESUCITAR
+' 2====== GUARDIA
+' 3====== PUEDE ENTRENAR
+' 4====== BANQUEROS
+' 5====== NOBLES
+' 6====== DRAGONES
+' 7====== GUARDIA CAOS
+' 8====== QUESTERO
+' 9====== AMIGOQUEST
+
+[INIT]
+NumNPCs=159
+[NPC1] 'NPC
+Name=Aldeano Ullathorpe
+Desc=¡Hola forastero! Bienvenido a nuestra humilde aldea, Ullathrope, es el unico pueblo en esta remota zona.
+Head=0
+Body=1
+Heading=3
+Movement=2
+Comercia=1
+Alineacion=0
+ReSpawn=0
+NROITEMS=1
+Obj1=1-2
+
+[NPC2] 'Gallo
+Name=Gallo
+Desc=
+Head=0
+Body=5
+Heading=3
+Movement=2
+Attackable=1
+Comercia=0
+Hostile=0
+GiveEXP=10
+GiveGLD=0
+MinHP=15
+MaxHP=15
+MaxHIT=1
+MinHIT=1
+DEF=0
+Alineacion=0
+ReSpawn=0
+NROITEMS=0
+PoderAtaque=5
+PoderEvasion=5
+Domable=30
+
+[NPC3] 'Cerdo
+Name=Cerdo
+Desc=
+Head=0
+Body=6
+Heading=3
+Movement=2
+Attackable=1
+Comercia=0
+Hostile=0
+GiveEXP=15
+GiveGLD=0
+MinHP=35
+MaxHP=35
+MaxHIT=2
+MinHIT=1
+DEF=0
+Alineacion=0
+ReSpawn=0
+NROITEMS=0
+PoderAtaque=10
+PoderEvasion=15
+Domable=50
+Snd2=4
+
+[NPC4] 'Vaca
+Name=Vaca
+Desc=
+Head=0
+Body=7
+Heading=3
+Movement=2
+Attackable=1
+Comercia=0
+Hostile=0
+GiveEXP=10
+GiveGLD=0
+MinHP=45
+MaxHP=45
+MaxHIT=3
+MinHIT=1
+ImpactRate=30
+DEF=2
+Alineacion=0
+ReSpawn=0
+NROITEMS=0
+PoderAtaque=25
+PoderEvasion=15
+Domable=70
+Snd2=8
+
+[NPC5] ' Sacerdote
+Name=Sacerdote
+NpcType=1
+Desc=Hola hijo mio, soy el sacerdote de este pueblo. Si quieres ser resucitado escribe /RESUCITAR 
+Head=3
+Body=49
+Heading=3
+Movement=1
+Attackable=0
+Comercia=0
+Hostile=0
+NROITEMS=0
+
+[NPC6] ' Guardia
+Name=Guardia Imperial
+NpcType=2
+Desc=Dare carcel a todos los criminales.
+Head=0
+Body=15
+Heading=3
+Movement=5
+Attackable=1
+Comercia=0
+Hostile=0
+GiveEXP=0
+GiveGLD=0
+MinHP=1000
+MaxHP=1000
+MaxHIT=250
+MinHIT=115
+PosOrig=1
+DEF=30
+Alineacion=0
+ReSpawn=0
+NROITEMS=0
+PoderAtaque=400
+PoderEvasion=400
+Domable=0
+
+[NPC7]
+Name=Herrero Armas
+Desc=Bienvenido, rata de alcantarilla, tengo algunas armas que pueden ayudarte en tus viajes.
+Head=0
+Body=16
+Heading=3
+Movement=1
+Attackable=0
+Comercia=1
+TipoItems=2
+Hostile=0
+Alineacion=0
+ReSpawn=0
+NROITEMS=14
+Obj1=398-1000
+Obj2=2-1000
+Obj3=738-1000
+Obj4=19-1000
+Obj5=123-1000
+Obj6=125-1000
+Obj7=124-1000
+Obj8=399-1000
+Obj9=129-1000
+Obj10=732-1000
+Obj11=15-1000
+Obj12=165-1000
+Obj13=164-1000
+Obj14=365-1000
+BackUp=1
+Domable=0
+
+[NPC8] 'NPC
+Name=Thorkis
+Desc=¡Hola jovencito! tengo las frutas más frescas y saludables de todo el mundo.
+Head=4
+Body=3
+Heading=3
+Movement=1
+Attackable=0
+Comercia=1
+Hostile=0
+Alineacion=0
+ReSpawn=0
+TipoItems=1
+NROITEMS=10
+Inflacion=1
+Obj1=1-100
+Obj2=21-100
+Obj3=22-100
+Obj4=23-100
+Obj5=24-100
+Obj6=25-100
+Obj7=26-100
+Obj8=27-100
+Obj9=28-100
+Obj10=29-100
+BackUp=1
+Domable=0
+
+[NPC9] 'NPC
+Name=Granjero de Ullathorpe
+Desc=¡Hola, tengo las mejores manzanas de la zona al mejor precio!.
+Head=4
+Body=3
+Heading=3
+Movement=1
+Attackable=0
+Comercia=1
+Hostile=0
+Alineacion=0
+ReSpawn=0
+TipoItems=1
+NROITEMS=3
+Inflacion=0
+Obj1=1-100
+Obj2=27-100
+Obj3=158-100
+BackUp=1
+Domable=0
+
+[NPC10] 'NPC
+Name=Bardo
+Desc=¡¿Hola, os gustaria oir una hermosa melodia?!.
+Head=0
+Body=17
+Heading=3
+Movement=1
+Attackable=0
+Comercia=0
+Hostile=0
+Alineacion=0
+Domable=0
+
+[NPC11] 'NPC
+Name=Aldeana
+Desc=¡Hola forastero! Bienvenido a nuestra humilde aldea, Ullathrope, es el unico pueblo en esta remota zona. Si viajas a hacia el norte encontraras mas poblaciones.
+Head=0
+Body=19
+Heading=3
+Movement=2
+Attackable=0
+Comercia=0
+Hostile=0
+Alineacion=0
+Domable=0
+
+[NPC12] 'NPC
+Name=Sastre Vestimentas Comunes
+Desc=¡Hola forastero! confeccionamos las mejores ropas de la zona.
+Head=0
+Body=19
+Heading=3
+Movement=1
+Attackable=0
+Comercia=1
+TipoItems=3
+Inflacion=2
+NROITEMS=16
+Obj1=31-100
+Obj2=32-100
+Obj3=35-100
+Obj4=135-100
+Obj5=382-100
+Obj6=761-100
+Obj7=240-100
+Obj8=486-100
+Obj9=502-100
+Obj10=760-100
+Obj11=507-100
+Obj12=942-100
+Obj13=943-100
+Obj14=944-100
+Obj15=945-100
+Obj16=1145-100
+InvReSpawn=1
+BackUp=1
+Domable=0
+
+
+[NPC13] 'NPC
+Name=Gobernador Ullathorpe
+Desc=Hola, soy el gobernador de Ullathorpe ¡Bienvenido a nuestra pequeña aldea!
+Head=0
+Body=4
+Heading=3
+Movement=2
+Attackable=0
+Comercia=0
+Domable=0
+
+[NPC14] 'NPC
+Name=Hechizera
+Desc=Hola, tengo las mejores pociones.
+Head=0
+Body=34
+Heading=3
+Movement=1
+Attackable=0
+Comercia=1
+TipoItems=11
+NROITEMS=6
+Obj1=36-10000
+Obj2=37-10000
+Obj3=38-10000
+Obj4=39-10000
+Obj5=166-10000
+Obj6=927-10000
+BackUp=1
+Domable=0
+
+
+[NPC15]
+Name=Tabernero
+Desc=¡Bienvenido a mi taberna viajero!
+Head=0
+Body=33
+Heading=3
+Movement=1
+Attackable=0
+Comercia=1
+TipoItems=2
+Hostile=0
+Alineacion=0
+ReSpawn=0
+NROITEMS=4
+Obj1=43-100
+Obj2=160-100
+Obj3=42-100
+Obj4=161-100
+BackUp=1
+Domable=0
+
+[NPC16] 'NPC
+Name=Aldeano Ullathorpe
+Desc=¡Hola forastero! Bienvenido a nuestra humilde aldea, Ullathrope, es el unico pueblo en esta remota zona.
+Head=0
+Body=1
+Heading=3
+Movement=2
+Comercia=1
+Alineacion=0
+ReSpawn=0
+NROITEMS=1
+Obj1=1-2
+
+[NPC17] 'NPC
+Name=Aldeano Ullathorpe
+Desc=¡Hola forastero! Bienvenido a nuestra humilde aldea, Ullathrope, es el unico pueblo en esta remota zona.
+Head=0
+Body=1
+Heading=3
+Movement=2
+Comercia=1
+Alineacion=0
+ReSpawn=0
+NROITEMS=1
+Obj1=1-2
+
+[NPC18] 'NPC
+Name=Aldeano Ullathorpe
+Desc=¡Hola forastero! Bienvenido a nuestra humilde aldea, Ullathrope, es el unico pueblo en esta remota zona.
+Head=0
+Body=1
+Heading=3
+Movement=2
+Comercia=1
+Alineacion=0
+ReSpawn=0
+NROITEMS=1
+Obj1=1-2
+
+[NPC19] 'NPC
+Name=Aldeano Ullathorpe
+Desc=¡Hola forastero! Bienvenido a nuestra humilde aldea, Ullathrope, es el unico pueblo en esta remota zona.
+Head=0
+Body=1
+Heading=3
+Movement=2
+Comercia=1
+Alineacion=0
+ReSpawn=0
+NROITEMS=1
+Obj1=1-2
+
+[NPC20] 'NPC
+Name=Aldeano Ullathorpe
+Desc=¡Hola forastero! Bienvenido a nuestra humilde aldea, Ullathrope, es el unico pueblo en esta remota zona.
+Head=0
+Body=1
+Heading=3
+Movement=2
+Comercia=1
+Alineacion=0
+ReSpawn=0
+NROITEMS=1
+Obj1=1-2
+
+[NPC21] 'NPC
+Name=Aldeano Ullathorpe
+Desc=¡Hola forastero! Bienvenido a nuestra humilde aldea, Ullathrope, es el unico pueblo en esta remota zona.
+Head=0
+Body=1
+Heading=3
+Movement=2
+Comercia=1
+Alineacion=0
+ReSpawn=0
+NROITEMS=1
+Obj1=1-2
+
+[NPC22] 'NPC
+Name=Aldeano Ullathorpe
+Desc=¡Hola forastero! Bienvenido a nuestra humilde aldea, Ullathrope, es el unico pueblo en esta remota zona.
+Head=0
+Body=1
+Heading=3
+Movement=2
+Comercia=1
+Alineacion=0
+ReSpawn=0
+NROITEMS=1
+Obj1=1-2
+
+[NPC23] 'NPC
+Name=Aldeano Ullathorpe
+Desc=¡Hola forastero! Bienvenido a nuestra humilde aldea, Ullathrope, es el unico pueblo en esta remota zona.
+Head=0
+Body=1
+Heading=3
+Movement=2
+Comercia=1
+Alineacion=0
+ReSpawn=0
+NROITEMS=1
+Obj1=1-2
+
+
+[NPC24] 'NPC
+Name=Banquero
+Desc=¡Bienvenido a la cadena de finanzas Goliath. Contamos con bancos en las ciudades mas importantes!
+Head=0
+Body=37
+Heading=3
+Movement=1
+NpcType=4
+Domable=0
+
+[NPC25] 'NPC
+Name=Aldeano Ullathorpe
+Desc=¡Hola forastero! Bienvenido a nuestra humilde aldea, Ullathrope, es el unico pueblo en esta remota zona.
+Head=0
+Body=1
+Heading=3
+Movement=2
+Comercia=1
+Alineacion=0
+ReSpawn=0
+NROITEMS=1
+Obj1=1-2
+
+[NPC26] 'NPC
+Name=Aldeano Ullathorpe
+Desc=¡Hola forastero! Bienvenido a nuestra humilde aldea, Ullathrope, es el unico pueblo en esta remota zona.
+Head=0
+Body=1
+Heading=3
+Movement=2
+Comercia=1
+Alineacion=0
+ReSpawn=0
+NROITEMS=1
+Obj1=1-2
+
+[NPC27] 'NPC
+Name=Aldeano Ullathorpe
+Desc=¡Hola forastero! Bienvenido a nuestra humilde aldea, Ullathrope, es el unico pueblo en esta remota zona.
+Head=0
+Body=1
+Heading=3
+Movement=2
+Comercia=1
+Alineacion=0
+ReSpawn=0
+NROITEMS=1
+Obj1=1-2
+
+[NPC28] 'NPC
+Name=Aldeano Ullathorpe
+Desc=¡Hola forastero! Bienvenido a nuestra humilde aldea, Ullathrope, es el unico pueblo en esta remota zona.
+Head=0
+Body=1
+Heading=3
+Movement=2
+Comercia=1
+Alineacion=0
+ReSpawn=0
+NROITEMS=1
+Obj1=1-2
+
+[NPC29] 'NPC
+Name=Aldeano Ullathorpe
+Desc=¡Hola forastero! Bienvenido a nuestra humilde aldea, Ullathrope, es el unico pueblo en esta remota zona.
+Head=0
+Body=1
+Heading=3
+Movement=2
+Comercia=1
+Alineacion=0
+ReSpawn=0
+NROITEMS=1
+Obj1=1-2
+
+[NPC30] 'NPC
+Name=Aldeano Ullathorpe
+Desc=¡Hola forastero! Bienvenido a nuestra humilde aldea, Ullathrope, es el unico pueblo en esta remota zona.
+Head=0
+Body=1
+Heading=3
+Movement=2
+Comercia=1
+Alineacion=0
+ReSpawn=0
+NROITEMS=1
+Obj1=1-2
+
+[NPC31] 'NPC
+Name=Aldeano Ullathorpe
+Desc=¡Hola forastero! Bienvenido a nuestra humilde aldea, Ullathrope, es el unico pueblo en esta remota zona.
+Head=0
+Body=1
+Heading=3
+Movement=2
+Comercia=1
+Alineacion=0
+ReSpawn=0
+NROITEMS=1
+Obj1=1-2
+
+[NPC32] 'NPC
+Name=Aldeano Ullathorpe
+Desc=¡Hola forastero! Bienvenido a nuestra humilde aldea, Ullathrope, es el unico pueblo en esta remota zona.
+Head=0
+Body=1
+Heading=3
+Movement=2
+Comercia=1
+Alineacion=0
+ReSpawn=0
+NROITEMS=1
+Obj1=1-2
+
+
+[NPC33] ' CARPINTERO
+Name=Leñador
+Desc=¡Hola muchacho!, Comercializamos todo aquel material sustraido de los Arboles.
+Head=4
+Body=1
+Heading=3
+Movement=1
+Attackable=0
+Comercia=1
+Inflacion=2
+TipoItems=14
+NROITEMS=2
+Obj1=58-10000
+Obj2=557-10000
+BackUp=1
+Domable=0
+
+[NPC34] ' Vendedor de propiedades-ULLATHORPE 
+Name=Vendedor de propiedades.
+Desc=Compramos y vendemos las mejores propiedades de la zona.
+Head=4
+Body=1
+Heading=3
+Movement=1
+Attackable=0
+Comercia=1
+Hostile=0
+TipoItems=9
+NROITEMS=4
+Obj1=54-1
+Obj2=65-1
+Obj3=69-1
+Obj4=73-1
+InvReSpawn=1
+BackUp=1
+Domable=0
+
+[NPC35] ' Vendedor de propiedades-NIX
+Name=Moraday.
+Desc=¡Hola, forastero! vendemos las mejores casas de Nix.
+Head=4
+Body=1
+Heading=3
+Movement=1
+Attackable=0
+Comercia=1
+Hostile=0
+TipoItems=9
+NROITEMS=10
+Obj1=87-1
+Obj2=91-1
+Obj3=95-1
+Obj4=99-1
+Obj5=103-1
+Obj6=107-1
+Obj7=111-1
+Obj8=115-1
+Obj9=119-1
+obj10=140-1
+InvReSpawn=1
+BackUp=1
+Domable=0
+
+[NPC36] 'NPC
+Name=Banquero (Móvil)
+Desc=¡Bienvenido a la cadena de finanzas Goliath. Contamos con bancos en las ciudades mas importantes!
+Head=0
+Body=37
+Heading=3
+Movement=1
+NpcType=4
+Domable=0
+
+[NPC37] 'NPC
+Name=Armero (Banderbill)
+Desc=Bienvenido, rata de alcantarilla, tengo algunas armas que pueden ayudarte en tus viajes.
+Head=0
+Body=16
+Heading=3
+Movement=1
+Attackable=0
+Comercia=1
+TipoItems=2
+Hostile=0
+Alineacion=0
+ReSpawn=0
+NROITEMS=12
+Obj1=2-100
+Obj2=3-100
+Obj3=9-100
+Obj4=15-100
+Obj5=19-100
+Obj6=123-100
+Obj7=124-100
+Obj8=125-100
+Obj9=126-100
+Obj10=164-100
+Obj11=129-100
+Obj12=389-100
+BackUp=1
+Domable=0
+
+
+[NPC38] 'NPC
+Name=Herrero Armaduras Cascos y Escudos
+Desc=Hola! Vendemos las mejores armaduras de la zona.
+Head=0
+Body=16
+Heading=3
+Movement=1
+Attackable=0
+Comercia=1
+TipoItems=3
+Hostile=0
+Alineacion=0
+NROITEMS=16
+Obj1=404-1000
+Obj2=130-1000
+Obj3=133-1000
+Obj4=132-1000
+Obj5=131-1000
+Obj6=405-1000
+Obj7=30-1000
+Obj8=773-1000
+Obj9=359-1000
+Obj10=565-1000
+Obj11=356-1000
+Obj12=1007-1000
+Obj13=360-1000
+Obj14=774-1000
+Obj15=195-1000
+Obj16=243-1000
+ReSpawn=1
+BackUp=1
+
+[NPC39] 'NPC
+Name=Sastre Tunicas
+Desc=¡Hola forastero! confeccionamos las mejores Túnicas de la zona.
+Head=0
+Body=19
+Heading=3
+Movement=1
+Attackable=0
+Comercia=1
+TipoItems=3
+Inflacion=0
+NROITEMS=10
+Obj1=239-1000
+Obj2=524-1000
+Obj3=238-1000
+Obj4=950-1000
+Obj5=196-1000
+Obj6=949-1000
+Obj7=381-1000
+Obj8=952-1000
+Obj9=357-1000
+Obj10=1067-1000
+InvReSpawn=1
+BackUp=1
+Domable=0
+
+[NPC40] 'NPC
+Name=Ben
+Info=Vendedor de frutas
+Desc=Tengo algunas las frutas más frescas y saludables de todo el mundo.
+Head=4
+Body=3
+Heading=3
+Movement=1
+Attackable=0
+Comercia=1
+Hostile=0
+Alineacion=0
+ReSpawn=0
+TipoItems=1
+NROITEMS=10
+Obj1=1-100
+Obj2=21-100
+Obj3=22-100
+Obj4=23-100
+Obj5=24-100
+Obj6=25-100
+Obj7=26-100
+Obj8=27-100
+Obj9=28-100
+Obj10=29-100
+BackUp=1
+Domable=0
+
+[NPC41] 'NPC
+Name=Inigo
+Info=Pescador
+Desc=¡Bienvenido al gremio de pescadores de Nix!
+Head=2
+Body=3
+Heading=3
+Movement=1
+Attackable=0
+Comercia=1
+Hostile=0
+Alineacion=0
+ReSpawn=0
+Inflacion=2
+TipoItems=1
+NROITEMS=4
+Obj1=138-100
+Obj2=139-100
+Obj3=544-100
+Obj4=545-100
+BackUp=1
+Domable=0
+
+[NPC42] 'NPC
+Name=Antogne
+Info=Vendedor comida en newbie dungeon
+Desc=¡Hola aventurero! Si estais hambriento habeis venido al lugar apropiado, tengo todo tipo de frutas.
+Head=4
+Body=3
+Heading=3
+Movement=2
+Attackable=0
+Comercia=1
+Hostile=0
+Alineacion=0
+ReSpawn=0
+TipoItems=1
+Inflacion=5
+NROITEMS=10
+Obj1=1-100
+Obj2=21-100
+Obj3=22-100
+Obj4=23-100
+Obj5=24-100
+Obj6=25-100
+Obj7=26-100
+Obj8=27-100
+Obj9=28-100
+Obj10=29-100
+BackUp=1
+Domable=0
+
+[NPC43] 'NPC
+Name=Sorks
+Info=Tabernero del newbie dungeon
+Desc=¿¡Estais sediento!?
+Head=0
+Body=33
+Heading=3
+Movement=2
+Attackable=0
+Comercia=1
+Hostile=0
+Alineacion=0
+ReSpawn=0
+TipoItems=13
+Inflacion=5
+NROITEMS=2
+Obj1=42-100
+Obj2=43-100
+BackUp=1
+Domable=0
+
+[NPC44] ' CARPINTERO
+Name=Carpintero Arcos y Flechas
+Desc=¡Hola muchacho!, bienvenido a mi humilde carpinteria. Aqui obtendras Arcos y Flechas!
+Head=2
+Body=1
+Heading=3
+Movement=1
+Attackable=0
+Comercia=1
+Hostile=0
+TipoItems=19
+NROITEMS=3
+Obj1=480-10000
+Obj2=478-10000
+Obj3=479-10000
+BackUp=1
+
+[NPC45] 'NPC
+Name=Espiritu
+Desc=¡Huye de aqui mientras puedas!
+Head=500
+Body=8
+Heading=3
+Movement=2
+Attackable=0
+Hostile=0
+Alineacion=0
+ReSpawn=0
+NROITEMS=0
+Domable=0
+
+[NPC46]
+Name=Mago Ulla
+Info=Mago de Ullathorpe
+Desc=Bienvenido a mi pequeño negocio, tengo algunos hechizos que te podrían interesar.
+Head=2
+Body=50
+Heading=3
+Movement=1
+Attackable=0
+Comercia=1
+TipoItems=24
+Hostile=0
+Alineacion=0
+ReSpawn=0
+NROITEMS=12
+Obj1=200-100
+Obj2=201-100
+Obj3=199-100
+Obj4=197-100
+Obj5=204-100
+Obj6=205-100
+Obj7=361-100
+Obj8=530-100
+Obj9=207-100
+Obj10=992-100
+Obj11=993-100
+Obj12=203-100
+Domable=0
+
+[NPC47]
+Name=Mago Nix
+Info=Mago de Nix
+Desc=Bienvenido a Nix! Aqui tenemos los mejores hechizos de invocación!
+Head=6
+Body=50
+Heading=3
+Movement=1
+Attackable=0
+Comercia=1
+TipoItems=24
+Hostile=0
+Alineacion=0
+ReSpawn=0
+NROITEMS=6
+Obj1=394-100
+Obj2=395-100
+Obj3=537-100
+Obj4=538-100
+Obj5=536-100
+Obj6=539-100
+Domable=0
+
+[NPC48] ' Minero
+Name=Minero
+Info=Minero
+Desc=Tengo los mejores metales de todo Argentum.
+Head=2
+Body=1
+Heading=3
+Movement=1
+Attackable=0
+Comercia=1
+Hostile=0
+TipoItems=23
+NROITEMS=3
+Obj1=386-10000
+Obj2=387-10000
+Obj3=388-10000
+BackUp=1
+Domable=0
+
+[NPC49] ' Guardia
+Name=Guardia Imperial
+Info=Movimiento random
+NpcType=2
+Desc=Dare carcel a todos los criminales.
+Head=0
+Body=15
+Heading=3
+Movement=2
+Attackable=1
+Comercia=0
+Hostile=0
+GiveEXP=0
+GiveGLD=0
+MinHP=1000
+MaxHP=1000
+MaxHIT=250
+MinHIT=150
+PosOrig=1
+DEF=30
+Alineacion=0
+ReSpawn=0
+NROITEMS=0
+GolpeExacto=1
+Domable=0
+
+[NPC50] 'NPC
+Name=Tellez
+Info=Tabernero del "Mesón Hostigado"
+Desc=¡Hola! Bienvenido al "Mesón Hostigado", ¿Que deseas beber?
+Head=0
+Body=33
+Heading=3
+Movement=2
+Attackable=0
+Comercia=1
+Hostile=0
+Alineacion=0
+ReSpawn=0
+TipoItems=13
+Inflacion=5
+NROITEMS=4
+Obj1=42-100
+Obj2=43-100
+Obj3=160-100
+Obj4=161-100
+BackUp=1
+Domable=0
+
+[NPC51] 'NPC
+Name=Mago Bander
+Info=Mago de Banderbill
+Desc=Bienvenido amigo, te encuentras en Banderbill, tengo unos poderosos hechizos que te podrian interesar!
+Head=6
+Body=50
+Heading=3
+Movement=1
+Attackable=0
+Comercia=1
+TipoItems=24
+Hostile=0
+Alineacion=0
+ReSpawn=0
+NROITEMS=9
+Obj1=910-100
+Obj2=911-100
+Obj3=206-100
+Obj4=1009-100
+Obj5=531-100
+Obj6=687-100
+Obj7=688-100
+Obj8=917-100
+Obj9=918-100
+Domable=0
+
+[NPC52] ' Vendedor de propiedades Rázgul
+Name=Rantarisk
+Desc=¡Hola, forastero! vendemos las mejores propiedades de Bannderbill.
+Head=4
+Body=1
+Heading=3
+Movement=1
+Attackable=0
+Comercia=1
+Hostile=0
+TipoItems=9
+NROITEMS=18
+Obj1=266-1
+Obj2=270-1
+Obj3=274-1
+Obj4=278-1
+Obj5=282-1
+Obj6=286-1
+Obj7=290-1
+Obj8=294-1
+Obj9=298-1
+Obj10=323-1
+Obj11=327-1
+Obj12=331-1
+Obj13=335-1
+Obj14=339-1
+Obj15=343-1
+Obj16=347-1
+Obj17=351-1
+Obj18=355-1
+InvReSpawn=1
+BackUp=1
+Domable=0
+
+[NPC53] 'NPC
+Name=Roksar
+info=Provisiones Banderbill
+Desc=Dispongo de todo tipo de provisiones.
+Head=4
+Body=3
+Heading=3
+Movement=1
+Attackable=0
+Comercia=1
+Hostile=0
+Alineacion=0
+ReSpawn=0
+TipoItems=1
+NROITEMS=10
+Inflacion=1
+Obj1=1-100
+Obj2=21-100
+Obj3=22-100
+Obj4=23-100
+Obj5=24-100
+Obj6=25-100
+Obj7=26-100
+Obj8=27-100
+Obj9=28-100
+Obj10=29-100
+BackUp=1
+Domable=0
+
+[NPC54] 'NPC
+Name=Sastre Banderbill
+info=Banderbill
+Desc=¡Hola forastero! confeccionamos las mejores ropas de la zona
+Head=0
+Body=19
+Heading=3
+Movement=1
+Attackable=0
+Comercia=1
+TipoItems=3
+Inflacion=0
+NROITEMS=3
+Obj1=414-10000
+Obj2=415-10000
+Obj3=416-10000
+InvReSpawn=1
+BackUp=1
+Domable=0
+
+[NPC55] 'NPC
+Name=Herrero
+Info=Banderbill
+Desc=Bienvenido, rata de alcantarilla, tengo algunas armas que pueden ayudarte en tus viajes. Si estas perdido tipea /AYUDA antes de que te expulse de mi herrería.
+Head=0
+Body=16
+Heading=3
+Movement=1
+Attackable=0
+Comercia=1
+TipoItems=2
+Hostile=0
+Alineacion=0
+ReSpawn=0
+NROITEMS=14
+Obj1=2-100
+Obj2=3-100
+Obj3=9-100
+Obj4=15-100
+Obj5=19-100
+Obj6=123-100
+Obj7=124-100
+Obj8=125-100
+Obj9=126-100
+Obj10=164-100
+Obj11=129-100
+Obj12=389-100
+Obj13=404-100
+Obj14=365-100
+BackUp=1
+Domable=0
+
+
+[NPC56] 'NPC
+Name=Herrero
+Info=Banderbill
+Desc=Bienvenido, rata de alcantarilla. Si estas perdido tipea /AYUDA antes de que te expulse de mi herrería.
+Head=0
+Body=16
+Heading=3
+Movement=1
+Attackable=0
+Comercia=1
+TipoItems=3
+NROITEMS=9
+Obj1=243-10000
+Obj2=356-10000
+Obj3=131-10000
+Obj4=132-10000
+Obj5=133-10000
+Obj6=195-10000
+Obj7=359-10000
+Obj8=360-10000
+Obj9=389-10000
+InvReSpawn=1
+BackUp=1
+Domable=0
+
+[NPC57] 'NPC
+Name=Banquero
+Info=Movil
+Desc=Hola, bienvenido a la cadena de finanzas Goliath. Somos la mas grande cadena de finanzas en Argentum, contamos con bancos en las ciudades mas importantes.
+Head=0
+Body=37
+Heading=3
+Movement=2
+NpcType=4
+Domable=0
+
+[NPC58] 'NPC
+Name=Pescador
+Info=Pescador
+Desc=¡Bienvenido al gremio de pescadores!
+Head=102
+Body=3
+Heading=3
+Movement=2
+Attackable=0
+Comercia=1
+Hostile=0
+Alineacion=0
+ReSpawn=0
+TipoItems=1
+NROITEMS=10
+Obj1=138-100
+Obj2=139-100
+BackUp=1
+Domable=0
+
+[NPC59] ' CARPINTERO
+Name=Leñador
+Desc=¡Hola muchacho!, si deseas vender o comprar madera escribe /COMERCIAR.
+Head=4
+Body=1
+Heading=3
+Movement=2
+Attackable=0
+Comercia=1
+Hostile=0
+TipoItems=14
+NROITEMS=15
+Obj1=58-1
+Obj2=127-100
+Obj3=730-100
+Obj4=723-100
+Obj5=721-100
+Obj6=696-100
+Obj7=553-100
+Obj8=552-100
+Obj9=551-100
+Obj10=480-100
+Obj11=479-100
+Obj12=478-100
+Obj13=476-100
+Obj14=475-100
+Obj15=474-100
+BackUp=1
+Domable=0
+
+[NPC60] ' Entrenador de Banderbill
+Name=O'Riley de Banderbill
+NpcType=3
+Desc=¡Hola amigo! Soy el maestro de armas de la milicia de Banderbill, si deseas que traiga una criatura solo debes pedirmelo. (Escribe /ENTRENAR)
+Head=6
+Body=57
+Heading=3
+Movement=1
+NroCriaturas=5
+CI1=500
+CI2=545
+CI3=565
+CI4=564
+CI5=563
+CN1=Murcielago
+CN2=Lobo
+CN3=Cobra
+CN4=Escorpion
+CN5=Goblin
+Domable=0
+
+[NPC61] 'NPC
+Name=Mago de Lindos
+Info=Mago de Lindos
+Desc=Bienvenido, estas en el negocio de Magia de Lindos, apuesto que vienes en busca de algun hechizo para modificar tu estado!
+Head=6
+Body=50
+Heading=3
+Movement=1
+Attackable=0
+Comercia=1
+TipoItems=24
+Hostile=0
+Alineacion=0
+ReSpawn=0
+NROITEMS=8
+Obj1=912-100
+Obj2=913-100
+obj3=922-100
+obj4=914-100
+Obj5=992-100
+Obj6=993-100
+Obj7=397-100
+Obj8=471-100
+Domable=0
+
+[NPC62] ' Vendedor de propiedades Barataria
+Name=Guldorf
+Desc=¡Hola, forastero! vendemos las mejores propiedades.
+Head=4
+Body=1
+Heading=3
+Movement=1
+Attackable=0
+Comercia=1
+Hostile=0
+TipoItems=9
+NROITEMS=7
+Obj1=420-1
+Obj2=424-1
+Obj3=428-1
+Obj4=432-1
+Obj5=436-1
+Obj6=440-1
+Obj7=444-1
+InvReSpawn=1
+BackUp=1
+Domable=0
+
+[NPC63] ' Sacerdote
+Name=Sacerdote
+NpcType=1
+Desc=Hola hijo mio, soy el sacerdote de este pueblo. Si quieres ser resucitado escribe /RESUCITAR 
+Head=3
+Body=49
+Heading=3
+Movement=1
+Attackable=0
+Comercia=0
+Hostile=0
+NROITEMS=3
+Obj1=1-7
+Obj2=3-1
+Obj3=2-1
+Domable=0
+
+[NPC64] 'NPC
+Name=Pescador
+Info=Pescador movil
+Desc=¡Hola forastero, bienvenido a nuestro pueblo!
+Head=102
+Body=3
+Heading=3
+Movement=2
+Attackable=0
+Comercia=1
+Hostile=0
+Alineacion=0
+ReSpawn=0
+TipoItems=1
+NROITEMS=10
+Obj1=138-100
+Obj2=139-100
+BackUp=1
+Domable=0
+
+[NPC65] 'Gallo
+Name=Gallo
+Info=INVULNERABLE
+Desc=
+Head=0
+Body=5
+Heading=3
+Movement=2
+Comercia=0
+Hostile=0
+GiveEXP=10
+GiveGLD=0
+MinHP=15
+MaxHP=15
+MaxHIT=1
+MinHIT=1
+DEF=0
+Alineacion=0
+ReSpawn=0
+NROITEMS=0
+PoderAtaque=5
+PoderEvasion=5
+Domable=0
+
+
+[NPC66] 'Cerdo
+Name=Cerdo
+Info=INVULNERABLE
+Desc=
+Head=0
+Body=6
+Heading=3
+Movement=2
+Comercia=0
+Hostile=0
+GiveEXP=15
+GiveGLD=0
+MinHP=35
+MaxHP=35
+MaxHIT=2
+MinHIT=1
+DEF=0
+Alineacion=0
+ReSpawn=0
+NROITEMS=0
+PoderAtaque=5
+PoderEvasion=5
+Domable=0
+
+
+[NPC67] 'Vaca
+Name=Vaca
+Info=INVULNERABLE
+Desc=
+Head=0
+Body=7
+Heading=3
+Movement=2
+Comercia=0
+Hostile=0
+GiveEXP=10
+GiveGLD=0
+MinHP=45
+MaxHP=45
+MaxHIT=3
+MinHIT=1
+DEF=2
+Alineacion=0
+ReSpawn=0
+NROITEMS=0
+PoderAtaque=5
+PoderEvasion=5
+Domable=0
+
+[NPC68] 'NPC
+Name=Pescador
+Info=Pescador movil
+Desc=¡Hola forastero, bienvenido a Lindos!
+Head=102
+Body=3
+Heading=3
+Movement=2
+Attackable=0
+Comercia=1
+Hostile=0
+Alineacion=0
+ReSpawn=0
+TipoItems=1
+NROITEMS=10
+Obj1=138-100
+Obj2=139-100
+BackUp=1
+Domable=0
+
+[NPC69] 'NPC
+Name=Argal
+Info=Provisiones Lindos
+Desc=¡Hola buen amigo! cuento con las mejores frutas de estas comarcas, por algunas monedas de oro podra obtener muy buenas provisiones.
+Head=2
+Body=3
+Heading=3
+Movement=1
+Attackable=0
+Comercia=1
+Hostile=0
+Alineacion=0
+ReSpawn=0
+TipoItems=1
+NROITEMS=10
+Inflacion=1
+Obj1=1-100
+Obj2=21-100
+Obj3=22-100
+Obj4=23-100
+Obj5=24-100
+Obj6=25-100
+Obj7=26-100
+Obj8=27-100
+Obj9=28-100
+Obj10=29-100
+BackUp=1
+Domable=0
+
+[NPC70] 'NPC
+Name=Sastre Lindos
+info=Lindos
+Desc=¡Hola forastero! confeccionamos las mejores ropas de la zona
+Head=0
+Body=19
+Heading=3
+Movement=1
+Attackable=0
+Comercia=1
+TipoItems=3
+Inflacion=0
+NROITEMS=16
+Obj1=31-100
+Obj2=32-100
+Obj3=35-100
+Obj4=135-100
+Obj5=382-100
+Obj6=761-100
+Obj7=946-100
+Obj8=240-100
+Obj9=486-100
+Obj10=502-100
+Obj11=760-100
+Obj12=507-100
+Obj13=942-100
+Obj14=943-100
+Obj15=944-100
+Obj16=945-100
+InvReSpawn=1
+BackUp=1
+Domable=0
+
+[NPC71] 'NPC
+Name=Brotherson
+Info=Lindos
+Desc=Bienvenido, rata de alcantarilla, tengo algunas armas que pueden ayudarte en tus viajes. Si estas perdido tipea /AYUDA antes de que te expulse de mi herrería.
+Head=0
+Body=16
+Heading=3
+Movement=1
+Attackable=0
+Comercia=1
+TipoItems=2
+Hostile=0
+Alineacion=0
+ReSpawn=0
+NROITEMS=13
+Obj1=2-100
+Obj2=3-100
+Obj3=9-100
+Obj4=15-100
+Obj5=19-100
+Obj6=123-100
+Obj7=124-100
+Obj8=125-100
+Obj9=126-100
+Obj10=164-100
+Obj11=129-100
+Obj12=165-100
+Obj13=389-100
+BackUp=1
+Domable=0
+
+[NPC72] ' Duque de Banderbill
+Name=Alarnick, Duque de Banderbill
+NpcType=5
+Desc=Hola buen amigo, yo soy el Goberbador de Banderbill. Mi funcion es garantizar que todo marche bien por estos pagos y combatir toda manifestacion del mal. Si deseas enlistarte en las tropas del reino escribe /ENLISTAR.
+Head=4
+Body=63
+Heading=3
+Movement=1
+Attackable=0
+
+[NPC73] ' Guardia
+Name=Guardia Imperial
+NpcType=2
+Desc=Dare carcel a todos los criminales.
+'Head=0
+Head=102
+Body=62
+Heading=3
+Movement=5
+Attackable=1
+Comercia=0
+Hostile=0
+GiveEXP=0
+GiveGLD=0
+MinHP=1000
+MaxHP=1000
+MaxHIT=250
+MinHIT=150
+PosOrig=1
+DEF=30
+Alineacion=0
+ReSpawn=0
+NROITEMS=0
+PoderAtaque=400
+PoderEvasion=400
+Domable=0
+
+[NPC74] 'Aguila
+Name=Aguila
+Head=0
+Body=59
+Heading=3
+Movement=2
+Attackable=1
+Hostile=0
+Alineacion=0
+GiveEXP=75
+GiveGLD=0
+MinHP=40
+MaxHP=40
+MaxHIT=15
+MinHIT=4
+PoderAtaque=25
+PoderEvasion=160
+Domable=87
+AguaValida=1
+
+[NPC75] 'Cuervo
+Name=Cuervo
+Head=0
+Body=68
+Heading=3
+Movement=2
+Attackable=1
+Hostile=0
+Alineacion=0
+GiveEXP=55
+GiveGLD=0
+MinHP=30
+MaxHP=30
+MaxHIT=6
+MinHIT=2
+PoderAtaque=15
+PoderEvasion=100
+Domable=50
+AguaValida=1
+
+[NPC76] 'Hormiga
+Name=Hormiga
+Head=0
+Body=70
+Heading=3
+Movement=2
+Attackable=1
+Hostile=0
+Alineacion=0
+GiveEXP=5
+GiveGLD=0
+MinHP=5
+MaxHP=5
+MaxHIT=1
+MinHIT=1
+PoderAtaque=5
+PoderEvasion=3
+Domable=5
+
+[NPC77] 'Rata
+Name=Rata
+Head=0
+Body=71
+Heading=3
+Movement=2
+Attackable=1
+Hostile=0
+Alineacion=0
+GiveEXP=5
+GiveGLD=0
+MinHP=15
+MaxHP=15
+MaxHIT=4
+MinHIT=2
+PoderAtaque=10
+PoderEvasion=20
+Domable=15
+Snd1=47
+Snd2=47
+
+[NPC78] 'Oso pardo
+Name=Oso pardo
+Head=0
+Body=73
+Heading=3
+Movement=2
+Attackable=1
+Hostile=0
+Alineacion=0
+GiveEXP=250
+GiveGLD=0
+MinHP=515
+MaxHP=515
+MaxHIT=100
+MinHIT=65
+PoderAtaque=700
+PoderEvasion=45
+Domable=300
+
+[NPC79] 'Tortuga
+Name=Tortuga gigante
+Head=0
+Body=74
+Heading=3
+Movement=2
+Attackable=1
+Hostile=0
+Alineacion=0
+GiveEXP=150
+GiveGLD=0
+MinHP=315
+MaxHP=315
+MaxHIT=80
+MinHIT=35
+PoderAtaque=300
+PoderEvasion=25
+Domable=200
+
+[NPC80] 'NPC
+Name=Mercader
+Desc=¡¡Hola buen amigo, compro y vendo todo tipo de mercancias!!
+Head=2
+Body=3
+Heading=3
+Movement=1
+Comercia=1
+TipoItems=1000
+NROITEMS=20
+Obj1=534-10000
+Obj2=1-10000
+Obj3=2-10000
+Obj4=3-10000
+Obj5=9-10000
+Obj6=15-10000
+Obj7=21-10000
+Obj8=22-10000
+Obj9=23-10000
+Obj10=24-10000
+Obj11=25-10000
+Obj12=26-10000
+Obj13=27-10000
+Obj14=28-10000
+Obj15=29-10000
+Obj16=31-10000
+Obj17=32-10000
+Obj18=35-10000
+Obj19=37-10000
+Obj20=38-10000
+InvReSpawn=1
+BackUp=1
+
+
+[NPC81] ' Guardia
+Name=Sacerdote
+NpcType=2
+Desc=Ohhh hijo mio!! que la llama de la virtud árda en tu corazón!!!
+Head=4
+Body=101
+Heading=3
+Movement=5
+Attackable=1
+Comercia=0
+Hostile=0
+GiveEXP=0
+GiveGLD=0
+MinHP=9550
+MaxHP=9550
+MaxHIT=100
+MinHIT=100
+PosOrig=1
+DEF=10
+Alineacion=0
+ReSpawn=0
+NROITEMS=0
+PoderAtaque=1500
+PoderEvasion=1500
+Domable=0
+LanzaSpells=2
+Sp1=25
+Sp2=9
+
+[NPC82] ' Guardia
+Name=Sacerdote
+NpcType=2
+Desc=Ohhh hijo mio!! que la llama de la virtud árda en tu corazón!!!
+Head=5
+Body=101
+Heading=3
+Movement=5
+Attackable=1
+Comercia=0
+Hostile=0
+GiveEXP=0
+GiveGLD=0
+MinHP=9550
+MaxHP=9550
+MaxHIT=100
+MinHIT=100
+PosOrig=1
+DEF=10
+Alineacion=0
+ReSpawn=0
+NROITEMS=0
+PoderAtaque=1500
+PoderEvasion=1500
+Domable=0
+LanzaSpells=2
+Sp1=25
+Sp2=9
+
+
+[NPC83] ' Guardia
+Name=Druida
+NpcType=2
+Desc=Ohhh hijo mio!! que la llama de la virtud árda en tu corazón!!!
+Head=102
+Body=56
+Heading=3
+Movement=5
+Attackable=1
+Comercia=0
+Hostile=0
+GiveEXP=0
+GiveGLD=0
+MinHP=9550
+MaxHP=9550
+MaxHIT=100
+MinHIT=100
+PosOrig=1
+DEF=10
+Alineacion=0
+ReSpawn=0
+NROITEMS=0
+PoderAtaque=1500
+PoderEvasion=1500
+Domable=0
+LanzaSpells=2
+Sp1=24
+Sp2=23
+
+[NPC84] ' Guardia
+Name=Druida
+NpcType=2
+Desc=Ohhh hijo mio!! que la llama de la virtud árda en tu corazón!!!
+Head=102
+Body=56
+Heading=3
+Movement=2
+Attackable=1
+Comercia=0
+Hostile=0
+GiveEXP=0
+GiveGLD=0
+MinHP=9550
+MaxHP=9550
+MaxHIT=100
+MinHIT=100
+PosOrig=1
+DEF=10
+Alineacion=0
+ReSpawn=0
+NROITEMS=0
+PoderAtaque=1500
+PoderEvasion=1500
+Domable=0
+LanzaSpells=2
+Sp1=24
+Sp2=23
+
+[NPC85] ' Guardia
+Name=Druida
+NpcType=2
+Desc=Ohhh hijo mio!! que la llama de la virtud árda en tu corazón!!!
+Head=103
+Body=56
+Heading=3
+Movement=2
+Attackable=1
+Comercia=0
+Hostile=0
+GiveEXP=0
+GiveGLD=0
+MinHP=9550
+MaxHP=9550
+MaxHIT=100
+MinHIT=100
+PosOrig=1
+DEF=10
+Alineacion=0
+ReSpawn=0
+NROITEMS=0
+PoderAtaque=1500
+PoderEvasion=1500
+Domable=0
+LanzaSpells=2
+Sp1=24
+Sp2=23
+
+[NPC86] ' Guardia
+Name=Mago Imperial
+NpcType=2
+Desc=Ohhh hijo mio!! que la llama de la virtud árda en tu corazón!!!
+Head=6
+Body=130
+Heading=3
+Movement=2
+Attackable=1
+Comercia=0
+Hostile=0
+GiveEXP=0
+GiveGLD=0
+MinHP=9550
+MaxHP=9550
+MaxHIT=100
+MinHIT=100
+PosOrig=1
+DEF=10
+Alineacion=0
+ReSpawn=0
+NROITEMS=0
+PoderAtaque=1500
+PoderEvasion=1500
+Domable=0
+LanzaSpells=2
+Sp1=24
+Sp2=23
+
+[NPC87] ' Guardia
+Name=Mago imperial
+NpcType=2
+Desc=Ohhh hijo mio!! que la llama de la virtud árda en tu corazón!!!
+Head=6
+Body=128
+Heading=3
+Movement=2
+Attackable=1
+Comercia=0
+Hostile=0
+GiveEXP=0
+GiveGLD=0
+MinHP=9550
+MaxHP=9550
+MaxHIT=100
+MinHIT=100
+PosOrig=1
+DEF=10
+Alineacion=0
+ReSpawn=0
+NROITEMS=0
+PoderAtaque=1500
+PoderEvasion=1500
+Domable=0
+LanzaSpells=2
+Sp1=24
+Sp2=23
+
+[NPC88] 'NPC
+Name=Ely
+Head=0
+Body=143
+Heading=3
+Movement=2
+Attackable=0
+Comercia=0
+Hostile=0
+Alineacion=0
+Domable=0
+LanzaSpells=1
+Sp1=5
+AguaValida=1
+
+[NPC89] 'NPC
+Name=Fuego fatuo
+Head=0
+Body=144
+Heading=3
+Movement=9
+Attackable=1
+Comercia=0
+Hostile=0
+Alineacion=0
+Domable=0
+GiveEXP=0
+GiveGLD=0
+MinHP=600
+MaxHP=600
+MaxHIT=100
+MinHIT=100
+PoderAtaque=500
+PoderEvasion=200
+Domable=0
+LanzaSpells=2
+Sp1=24
+Sp2=37
+AguaValida=1
+ReSpawn=1
+
+[NPC90] 'NPC
+Name=Morgolock's soul
+Head=0
+Body=144
+Heading=3
+Movement=2
+Comercia=0
+Hostile=0
+Alineacion=0
+Domable=0
+GiveEXP=0
+GiveGLD=0
+MinHP=29550
+MaxHP=29550
+MaxHIT=100
+MinHIT=100
+PoderAtaque=1500
+PoderEvasion=1500
+Domable=0
+LanzaSpells=2
+Sp1=24
+Sp2=23
+AguaValida=1
+
+[NPC91] 'Aguila
+Name=Gran Aguila
+Head=0
+Body=59
+Heading=3
+Movement=2
+Attackable=1
+Hostile=0
+Alineacion=0
+GiveEXP=75
+GiveGLD=0
+MinHP=40
+MaxHP=40
+MaxHIT=15
+MinHIT=4
+PoderAtaque=25
+PoderEvasion=160
+Domable=87
+AguaValida=1
+
+[NPC92] 'Elemental de agua
+Name=Elemental de agua
+Body=154
+Heading=3
+Movement=2
+MinHP=400
+MaxHP=400
+MaxHIT=135
+MinHIT=110
+PoderAtaque=200
+PoderEvasion=200
+AguaValida=0
+Attackable=1
+GiveEXP=0
+GiveGLD=0
+ReSpawn=1
+
+[NPC93] 'Elemental de fuego
+ReSpawn=1
+Name=Elemental de fuego
+Body=153
+Heading=3
+Movement=2
+MinHP=300
+MaxHP=300
+MaxHIT=120
+MinHIT=100
+PoderAtaque=200
+PoderEvasion=200
+LanzaSpells=1
+Sp1=36
+Attackable=1
+
+[NPC94] 'Elemental de tierra
+Name=Elemental de tierra
+ReSpawn=1
+Body=152
+Heading=3
+Movement=2
+MinHP=250
+MaxHP=250
+MaxHIT=120
+MinHIT=100
+PoderAtaque=200
+PoderEvasion=200
+LanzaSpells=1
+Sp1=24
+Attackable=1
+
+[NPC95] 'Jabalí
+Name=Jabalí
+Head=0
+Body=150
+Heading=3
+Movement=2
+Attackable=1
+Hostile=0
+Alineacion=0
+GiveEXP=250
+GiveGLD=0
+MinHP=515
+MaxHP=515
+MaxHIT=100
+MinHIT=65
+PoderAtaque=700
+PoderEvasion=45
+Domable=250
+
+[NPC96] 'Tigre
+Name=Tigre
+Head=0
+Body=147
+Heading=3
+Movement=2
+Attackable=1
+Hostile=0
+Alineacion=0
+GiveEXP=600
+GiveGLD=0
+MinHP=800
+MaxHP=800
+MaxHIT=70
+MinHIT=30
+PoderAtaque=700
+PoderEvasion=45
+Domable=350
+
+
+[NPC97] 'Pato
+Name=Pato
+Head=0
+Body=88
+Heading=3
+Movement=2
+Attackable=1
+Hostile=0
+Alineacion=0
+GiveEXP=20
+GiveGLD=0
+MinHP=30
+MaxHP=30
+MaxHIT=5
+MinHIT=3
+PoderAtaque=10
+PoderEvasion=10
+Domable=50
+
+[NPC98] ' Demonio
+Name=Demonio
+NpcType=5
+Body=83
+Heading=3
+Attackable=0
+Desc=Si deseás unirte a las fuerzas del caos escribí /ENLISTAR
+Movement=1
+Faccion=1
+BackUp=1
+
+[NPC99] 'NPC
+Name=ITEMSPOWAS
+Desc=¡Hola forastero! confeccionamos las mejores ropas de la zona.
+Head=0
+Body=19
+Heading=3
+Movement=1
+Attackable=0
+Comercia=1
+TipoItems=3
+NROITEMS=16
+Inflacion=0
+Obj1=796-1000
+Obj2=800-1000
+Obj3=907-1000
+Obj4=789-1000
+Obj5=934-1000
+Obj6=739-1000
+Obj7=1000-1000
+Obj8=757-1000
+Obj9=696-1000
+Obj10=1082-1000
+Obj11=400-1000
+Obj12=698-1000
+Obj13=942-1000
+Obj14=943-1000
+Obj15=944-1000
+Obj16=945-1000
+InvReSpawn=1
+BackUp=0
+Domable=0
+
+[NPC100] ' Guardia del Caos
+Name=Guardia del Caos
+NpcType=8
+Desc=Daré muerte a todos los ciudadanos!
+Head=0
+Body=193
+Heading=3
+Movement=2
+Attackable=1
+Comercia=0
+Hostile=0
+GiveEXP=0
+GiveGLD=0
+MinHP=1000
+MaxHP=1000
+MaxHIT=250
+MinHIT=115
+PosOrig=1
+DEF=30
+Alineacion=2
+ReSpawn=0
+NROITEMS=0
+PoderAtaque=400
+PoderEvasion=400
+Domable=0
+
+[NPC101] ' Questero
+Name=Quest Man
+NpcType=8
+Body=18
+Heading=3
+Attackable=0
+Desc=Si deseás comenzar una Quest typea /AVENTURA o si vienes por tu recompensa typea /REWARD
+Movement=1
+BackUp=1
+
+[NPC102] ' Amigo Quest
+Name=Quest Friend
+NpcType=9
+Body=18
+Heading=3
+Attackable=0
+Desc=Quieres saber si soy yo? typea /ADIVINA
+Movement=1
+BackUp=1
+
+[NPC103] 'Araña de Quest
+Name=Araña gigante
+Head=0
+Body=42
+Heading=3
+Movement=3
+Alineacion=2
+Attackable=1
+Comercia=0
+Hostile=1
+GiveEXP=0
+GiveGLD=0
+MinHP=1500
+MaxHP=1500
+MaxHIT=100
+MinHIT=75
+DEF=0
+Veneno=1
+PoderAtaque=150
+PoderEvasion=70
+DeQuest=1
+
+[NPC104]
+Name=Rey Elfo
+NpcType=10
+Desc=Hola buen amigo, yo soy el Goberbador de Nix. Mi funcion es garantizar que todo marche bien por estos pagos y combatir toda manifestacion del mal. Si deseas enlistarte en las tropas del reino elfo escribe /ENLISTAR.
+Head=104
+Body=63
+Heading=3
+Movement=1
+Attackable=0
+
+[NPC105]
+Name=Rey Caotico Elfo
+NpcType=10
+Desc=Si deseás unirte a las fuerzas del caos escribí /ENLISTAR
+Head=103
+Body=78
+Heading=3
+Movement=1
+Attackable=0
+Faccion=1
+
+[NPC106]
+Name=Rey Elfo Oscuro
+NpcType=11
+Desc=Hola buen amigo, yo soy el Goberbador de Terminus. Mi funcion es garantizar que todo marche bien por estos pagos y combatir toda manifestacion del mal. Si deseas enlistarte en las tropas del reino elfo oscuro escribe /ENLISTAR.
+Head=202
+Body=63
+Heading=3
+Movement=1
+Attackable=0
+
+[NPC107]
+Name=Rey Caotico Elfo Oscuro
+NpcType=11
+Desc=Si deseás unirte a las fuerzas del caos escribí /ENLISTAR
+Head=203
+Body=129
+Heading=3
+Movement=1
+Attackable=0
+Faccion=1
+
+[NPC108]
+Name=Rey Gnomo
+NpcType=12
+Desc=Hola buen amigo, yo soy el Goberbador de Nueva Esperanza. Mi funcion es garantizar que todo marche bien por estos pagos y combatir toda manifestacion del mal. Si deseas enlistarte en las tropas del reino gnomo escribe /ENLISTAR.
+Head=401
+Body=102
+Heading=3
+Movement=1
+Attackable=0
+
+[NPC109]
+Name=Rey Caotico Gnomo
+NpcType=12
+Desc=Si deseás unirte a las fuerzas del caos escribí /ENLISTAR
+Head=401
+Body=81
+Heading=3
+Movement=1
+Attackable=0
+Faccion=1
+
+[NPC110]
+Name=Rey Enano
+NpcType=13
+Desc=Hola buen amigo, yo soy el Goberbador de Dahl. Mi funcion es garantizar que todo marche bien por estos pagos y combatir toda manifestacion del mal. Si deseas enlistarte en las tropas del reino enano escribe /ENLISTAR.
+Head=301
+Body=133
+Heading=3
+Movement=1
+Attackable=0
+
+[NPC111]
+Name=Rey Caotico Enano
+NpcType=13
+Desc=Si deseás unirte a las fuerzas del caos escribí /ENLISTAR
+Head=302
+Body=81
+Heading=3
+Movement=1
+Attackable=0
+Faccion=1
+
+[NPC112]
+Name=Rey Orco
+NpcType=14
+Desc=Hola buen amigo, yo soy el Goberbador de Nexón. Mi funcion es garantizar que todo marche bien por estos pagos y combatir toda manifestacion del mal. Si deseas enlistarte en las tropas del reino orco escribe /ENLISTAR.
+Head=507
+Body=63
+Heading=3
+Movement=1
+Attackable=0
+
+[NPC113]
+Name=Rey Caotico Orco
+NpcType=14
+Desc=Si deseás unirte a las fuerzas del caos escribí /ENLISTAR
+Head=504
+Body=78
+Heading=3
+Movement=1
+Attackable=0
+Faccion=1
+
+[NPC114] ' Guardia Real Enano
+Name=Guardia Real
+NpcType=2
+Desc= Defended las minas!
+Head=301
+Body=188
+Heading=3
+Movement=5
+Attackable=1
+Comercia=0
+Hostile=0
+GiveEXP=0
+GiveGLD=0
+MinHP=1000
+MaxHP=1000
+MaxHIT=250
+MinHIT=150
+PosOrig=1
+DEF=30
+Alineacion=0
+ReSpawn=0
+NROITEMS=0
+PoderAtaque=400
+PoderEvasion=400
+Domable=0
+
+[NPC115] ' Guardia del Caos Enano
+Name=Guardia del Caos
+NpcType=7
+Desc= Siente mi furia, cuidadano!
+Head=302
+Body=216
+Heading=3
+Movement=6
+Attackable=1
+Comercia=0
+Hostile=0
+GiveEXP=0
+GiveGLD=0
+MinHP=1000
+MaxHP=1000
+MaxHIT=250
+MinHIT=160
+PosOrig=1
+DEF=35
+Alineacion=0
+ReSpawn=0
+NROITEMS=0
+PoderAtaque=400
+PoderEvasion=400
+Domable=0
+
+
+
+
+
+
+[NPC116] ' Guardia Real Gnomo
+Name=Mago Real 
+NpcType=2
+Desc= Despierten, magias ancestrales!
+Head=401
+Body=110
+Heading=3
+Movement=2
+Attackable=1
+Comercia=0
+Hostile=0
+GiveEXP=0
+GiveGLD=0
+MinHP=9550
+MaxHP=9550
+MaxHIT=100
+MinHIT=100
+PosOrig=1
+DEF=10
+Alineacion=0
+ReSpawn=0
+NROITEMS=0
+PoderAtaque=1500
+PoderEvasion=1500
+Domable=0
+LanzaSpells=2
+Sp1=24
+Sp2=23
+
+[NPC117] ' Guardia del Caos Gnomo
+Name=Mago del Caos 
+NpcType=6
+Desc= No pasaras sin ser castigado!
+Head=401
+Body=135
+Heading=3
+Movement=2
+Attackable=1
+Comercia=0
+Hostile=0
+GiveEXP=0
+GiveGLD=0
+MinHP=9550
+MaxHP=9550
+MaxHIT=100
+MinHIT=100
+PosOrig=1
+DEF=10
+Alineacion=0
+ReSpawn=0
+NROITEMS=0
+PoderAtaque=1500
+PoderEvasion=1500
+Domable=0
+LanzaSpells=2
+Sp1=32
+Sp2=30
+
+
+
+
+
+
+
+[NPC118] ' Guardia Real Elfo
+Name=Guardia Real
+NpcType=2
+Desc= Deseas morir, criminal?
+Head=104
+Body=101
+Heading=3
+Movement=5
+Attackable=1
+Comercia=0
+Hostile=0
+GiveEXP=0
+GiveGLD=0
+MinHP=1000
+MaxHP=1000
+MaxHIT=250
+MinHIT=115
+PosOrig=1
+DEF=30
+Alineacion=0
+ReSpawn=0
+NROITEMS=0
+PoderAtaque=400
+PoderEvasion=400
+Domable=0
+
+
+[NPC119] ' Guardia del Caos Elfo
+Name=Guardia del Caos
+NpcType=6
+Desc= Ciudadano, tu muerte es segura.
+Head=103
+Body=205
+Heading=3
+Movement=5
+Attackable=1
+Comercia=0
+Hostile=0
+GiveEXP=0
+GiveGLD=0
+MinHP=1000
+MaxHP=1000
+MaxHIT=230
+MinHIT=125
+PosOrig=1
+DEF=30
+Alineacion=0
+ReSpawn=0
+NROITEMS=0
+PoderAtaque=400
+PoderEvasion=400
+Domable=0
+
+
+
+
+
+
+
+[NPC120] ' Guardia Real Elfo Oscuro
+Name=Guardia Real
+NpcType=2
+Desc= Sufre, asesino!!
+Head=202
+Body=181
+Heading=3
+Movement=5
+Attackable=1
+Comercia=0
+Hostile=0
+GiveEXP=0
+GiveGLD=0
+MinHP=1000
+MaxHP=1000
+MaxHIT=250
+MinHIT=120
+PosOrig=1
+DEF=30
+Alineacion=0
+ReSpawn=0
+NROITEMS=0
+PoderAtaque=400
+PoderEvasion=400
+Domable=0
+
+[NPC121] ' Guardia del Caos Elfo Oscuro
+Name=Guardia del Caos
+NpcType=6
+Desc= Que las sombras se apoderen de ti...
+Head=203
+Body=178
+Heading=3
+Movement=5
+Attackable=1
+Comercia=0
+Hostile=0
+GiveEXP=0
+GiveGLD=0
+MinHP=1000
+MaxHP=1000
+MaxHIT=250
+MinHIT=125
+PosOrig=1
+DEF=30
+Alineacion=0
+ReSpawn=0
+NROITEMS=0
+PoderAtaque=400
+PoderEvasion=400
+Domable=0
+
+
+
+
+
+
+
+
+[NPC122] ' Guardia Real Orco
+Name=Guardia Real
+NpcType=2
+Desc= EneMiGo de la HorDa, tu Hora ha LleGado!
+Head=507
+Body=201
+Heading=3
+Movement=5
+Attackable=1
+Comercia=0
+Hostile=0
+GiveEXP=0
+GiveGLD=0
+MinHP=1000
+MaxHP=1000
+MaxHIT=270
+MinHIT=140
+PosOrig=1
+DEF=30
+Alineacion=0
+ReSpawn=0
+NROITEMS=0
+PoderAtaque=430
+PoderEvasion=410
+Domable=0
+
+[NPC123] ' Guardia del Caos Orco
+Name=Guardia del Caos
+NpcType=6
+Desc= Que La Furia DeL CaOs CaiGa soBre ti !!
+Head=504
+Body=134
+Heading=3
+Movement=5
+Attackable=1
+Comercia=0
+Hostile=0
+GiveEXP=0
+GiveGLD=0
+MinHP=1500
+MaxHP=1500
+MaxHIT=270
+MinHIT=140
+PosOrig=1
+DEF=30
+Alineacion=0
+ReSpawn=0
+NROITEMS=0
+PoderAtaque=430
+PoderEvasion=410
+Domable=0
+
+[NPC124] ' FERRETERO
+Name=Ferretero Herramientas
+Desc=¡Hola Noble Trabajador!, bienvenido a mi Ferreteria. Aqui podras encontrar todo tipo de herramientas!
+Head=7
+Body=100
+Heading=3
+Movement=1
+Attackable=0
+Comercia=1
+Hostile=0
+TipoItems=20
+NROITEMS=9
+Obj1=187-1000
+Obj2=389-1000
+Obj3=127-1000
+Obj4=198-1000
+Obj5=804-1000
+Obj6=556-1000
+Obj7=805-1000
+Obj8=138-1000
+Obj9=543-1000
+BackUp=1
+
+[NPC125]
+Name=Mago de Nueva Esperanza
+Info=Mago de Nueva Esperanza
+Desc=Bienvenido viajero! Aqui encontrarás los hechizos mas poderosos de estas tierras!!!
+Head=2
+Body=50
+Heading=3
+Movement=1
+Attackable=0
+Comercia=1
+TipoItems=24
+Hostile=0
+Alineacion=0
+ReSpawn=0
+NROITEMS=6
+Obj1=689-100
+Obj2=1100-100
+Obj3=1101-100
+Obj4=1102-100
+Obj5=690-100
+Obj6=1148-100
+Domable=0
+
+[NPC126]
+Name=Mago de Arghal
+Info=Mago de Arghal
+Desc=Hola, si quieres aprender como Resucitar, estás en el lugar indicado
+Head=2
+Body=50
+Heading=3
+Movement=1
+Attackable=0
+Comercia=1
+TipoItems=24
+Hostile=0
+Alineacion=0
+ReSpawn=0
+NROITEMS=2
+Obj1=319-100
+Obj2=909-100
+Domable=0
+
+[NPC127]
+Name=Mago Sombreros y Bacus
+Info=Mago S
+Desc=Bienvenido a mi pequeño negocio, si eres un Mago, no te has equivocado de sitio!
+Head=2
+Body=50
+Heading=3
+Movement=1
+Attackable=0
+Comercia=1
+TipoItems=24
+Hostile=0
+Alineacion=0
+ReSpawn=0
+NROITEMS=4
+Obj1=956-100
+Obj2=1137-100
+Obj3=997-100
+Obj4=998-100
+Domable=0
+
+[NPC128] 'NPC
+Name=Lingotes Pieles y Chalas
+Desc=Lingotes Pieles y Chalas
+Head=0
+Body=16
+Heading=3
+Movement=1
+Attackable=0
+Comercia=1
+TipoItems=29
+Inflacion=0
+NROITEMS=1
+Obj1=1-1
+BackUp=1
+Domable=0
+
+[NPC129] 'NPC
+Name=Sastre Ullathorpe
+Desc=¡Hola forastero! confeccionamos las mejores ropas de la zona.
+Head=0
+Body=19
+Heading=3
+Movement=1
+Attackable=0
+Comercia=1
+TipoItems=3
+Inflacion=2
+NROITEMS=16
+Obj1=31-100
+Obj2=32-100
+Obj3=35-100
+Obj4=135-100
+Obj5=382-100
+Obj6=761-100
+Obj7=946-100
+Obj8=240-100
+Obj9=486-100
+Obj10=502-100
+Obj11=760-100
+Obj12=507-100
+Obj13=942-100
+Obj14=943-100
+Obj15=944-100
+Obj16=945-100
+InvReSpawn=1
+BackUp=1
+Domable=0
+
+[NPC130] 'NPC
+Name=Lingotes Plata
+Desc=Hola, tengo Los mejores lingotes de Todo Argentum.
+Head=0
+Body=16
+Heading=3
+Movement=1
+Attackable=0
+Comercia=1
+TipoItems=29
+Inflacion=2
+NROITEMS=1
+Obj1=1-1
+BackUp=1
+Domable=0
+
+[NPC131] 'NPC
+Name=Lingotes Oro
+Desc=Hola, tengo Los mejores lingotes de Todo Argentum.
+Head=0
+Body=16
+Heading=3
+Movement=1
+Attackable=0
+Comercia=1
+TipoItems=29
+Inflacion=2
+NROITEMS=1
+Obj1=1-1
+BackUp=1
+Domable=0
+
+[NPC132] 'NPC
+Name=Marinero
+Name=Transportador
+NpcType=9
+desc=Escribe "/viaje" para abrir el folleto de destinos.
+head=9
+body=47
+heading=3
+movement=1
+attackable=0
+comercia=0
+hostile=0
+NROITEMS=0
+
+[NPC133] 'NPC
+Name=Sr de Los Newbies
+Head=0
+Body=16
+Heading=3
+Movement=1
+Attackable=0
+Comercia=1
+TipoItems=29
+desc=Si eres un NEWBIE, has llegado al lugar indicado!
+Inflacion=2
+NROITEMS=15
+Obj1=460-10000
+Obj2=461-10000
+Obj3=462-10000
+Obj4=463-10000
+Obj5=464-10000
+Obj6=465-10000
+Obj7=466-10000
+Obj8=467-10000
+Obj9=468-10000
+Obj10=559-10000
+Obj11=569-10000
+Obj12=570-10000
+Obj13=571-10000
+Obj14=572-10000
+Obj15=576-10000
+BackUp=1
+Domable=0
+
+[NPC134] 'NPC
+Name=Sastre Ullathorpe
+Desc=¡Hola forastero! confeccionamos las mejores ropas de la zona.
+Head=0
+Body=19
+Heading=3
+Movement=1
+Attackable=0
+Comercia=1
+TipoItems=3
+Inflacion=2
+NROITEMS=17
+Obj1=196-10000
+Obj2=524-10000
+Obj3=525-10000
+Obj4=526-10000
+Obj5=742-10000
+Obj6=748-10000
+Obj7=770-10000
+Obj8=796-10000
+Obj9=797-10000
+Obj10=798-10000
+Obj11=800-10000
+Obj12=801-10000
+Obj13=802-10000
+Obj14=803-10000
+Obj15=935-10000
+Obj16=936-10000
+Obj17=952-10000
+InvReSpawn=1
+BackUp=1
+Domable=0
+
+[NPC135] 'NPC
+Name=Herrero
+Info=Ulla
+Desc=Bienvenido tengo las mejores armas de todo el mundo.
+Body=16
+Heading=3
+Movement=1
+Attackable=0
+Comercia=1
+TipoItems=2
+Hostile=0
+Alineacion=0
+ReSpawn=0
+NROITEMS=15
+Obj1=957-10000
+Obj2=956-10000
+Obj3=952-10000
+Obj4=757-10000
+Obj5=740-10000
+Obj6=739-10000
+Obj7=738-10000
+Obj8=736-10000
+Obj9=735-10000
+Obj10=734-10000
+Obj11=733-10000
+Obj12=732-10000
+Obj13=731-10000
+Obj14=729-10000
+Obj15=728-10000
+BackUp=1
+Domable=0
+
+[NPC136] 'NPC
+Name=Herrero
+Info=Ulla
+Desc=Bienvenido tengo las mejores armas de todo el mundo.
+Body=16
+Heading=3
+Movement=1
+Attackable=0
+Comercia=1
+TipoItems=2
+Hostile=0
+Alineacion=0
+ReSpawn=0
+NROITEMS=18
+Obj1=727-10000
+Obj2=726-10000
+Obj3=725-10000
+Obj4=724-10000
+Obj5=722-10000
+Obj6=720-10000
+Obj7=719-10000
+Obj8=718-10000
+Obj9=717-10000
+Obj10=716-10000
+Obj11=715-10000
+Obj12=714-10000
+Obj13=713-10000
+Obj14=712-10000
+Obj15=711-10000
+Obj16=124-10000
+Obj17=957-10000
+Obj18=952-10000
+BackUp=1
+Domable=0
+
+[NPC137] 'NPC
+Name=Herrero
+Info=Ulla
+Desc=Bienvenido tengo las mejores armas de todo el mundo.
+Body=16
+Heading=3
+Movement=1
+Attackable=0
+Comercia=1
+TipoItems=2
+Hostile=0
+Alineacion=0
+ReSpawn=0
+NROITEMS=20
+Obj1=710-10000
+Obj2=709-10000
+Obj3=708-10000
+Obj4=707-10000
+Obj5=705-10000
+Obj6=585-10000
+Obj7=560-10000
+Obj8=402-10000
+Obj9=401-10000
+Obj10=400-10000
+Obj11=399-10000
+Obj12=398-10000
+Obj13=367-10000
+Obj14=366-10000
+Obj15=365-10000
+Obj16=164-10000
+Obj17=159-10000
+Obj18=129-10000
+Obj19=126-10000
+Obj20=125-10000
+BackUp=1
+Domable=0
+
+[NPC138] 'NPC
+Name=Herrero
+Info=Ulla
+Desc=Bienvenido! Tengo los mejores escudos para tus crueles batallas.
+Body=16
+Heading=3
+Movement=1
+Attackable=0
+Comercia=1
+TipoItems=2
+Hostile=0
+Alineacion=0
+ReSpawn=0
+NROITEMS=10
+Obj1=404-10000
+Obj2=564-10000
+Obj3=699-10000
+Obj4=700-10000
+Obj5=701-10000
+Obj6=702-10000
+Obj7=703-10000
+Obj8=704-10000
+Obj9=133-10000
+Obj10=130-10000
+BackUp=1
+Domable=0
+
+[NPC139] 'NPC
+Name=Herrero
+Info=Ulla
+Desc=Bienvenido! Tengo los mejores cascos para tus crueles batallas.
+Body=16
+Heading=3
+Movement=1
+Attackable=0
+Comercia=1
+TipoItems=2
+Hostile=0
+Alineacion=0
+ReSpawn=0
+NROITEMS=12
+Obj1=131-10000
+Obj2=132-10000
+Obj3=405-10000
+Obj4=691-10000
+Obj5=692-10000
+Obj6=693-10000
+Obj7=694-10000
+Obj8=695-10000
+Obj9=697-10000
+Obj10=951-10000
+Obj11=568-10000
+Obj12=698-10000
+BackUp=1
+Domable=0
+
+[NPC140] 'NPC
+Name=Herrero
+Info=Ulla
+Desc=Bienvenido! Tengo las mejores armaduras de Land Of Dragons
+Body=16
+Heading=3
+Movement=1
+Attackable=0
+Comercia=1
+TipoItems=2
+Hostile=0
+Alineacion=0
+ReSpawn=0
+NROITEMS=16
+Obj1=195-10000
+Obj2=237-10000
+Obj3=243-10000
+Obj4=356-10000
+Obj5=360-10000
+Obj6=390-10000
+Obj7=391-10000
+Obj8=392-10000
+Obj9=393-10000
+Obj10=481-10000
+Obj11=482-10000
+Obj12=483-10000
+Obj13=485-10000
+Obj14=487-10000
+Obj15=489-10000
+Obj16=493-10000
+BackUp=1
+Domable=0
+
+[NPC141] 'NPC
+Name=Herrero
+Info=Ulla
+Desc=Bienvenido! Tengo las mejores armaduras de Land Of Dragons
+Body=16
+Heading=3
+Movement=1
+Attackable=0
+Comercia=1
+TipoItems=2
+Hostile=0
+Alineacion=0
+ReSpawn=0
+NROITEMS=17
+Obj1=495-10000
+Obj2=496-10000
+Obj3=497-10000
+Obj4=500-10000
+Obj5=529-10000
+Obj6=566-10000
+Obj7=567-10000
+Obj8=749-10000
+Obj9=751-10000
+Obj10=759-10000
+Obj11=765-10000
+Obj12=766-10000
+Obj13=773-10000
+Obj14=774-10000
+Obj15=782-10000
+Obj16=929-10000
+Obj17=958-10000
+BackUp=1
+
+[NPC142] 'NPC
+Name=Herrero
+Info=Ulla
+Desc=Bienvenido! Tengo las mejores armaduras con Defensa magica de Land Of Dragons
+Body=16
+Heading=3
+Movement=1
+Attackable=0
+Comercia=1
+TipoItems=2
+Hostile=0
+Alineacion=0
+ReSpawn=0
+NROITEMS=16
+Obj1=788-10000
+Obj2=789-10000
+Obj3=790-10000
+Obj4=791-10000
+Obj5=792-10000
+Obj6=793-10000
+Obj7=794-10000
+Obj8=795-10000
+Obj9=796-10000
+Obj10=797-10000
+Obj11=798-10000
+Obj12=799-10000
+Obj13=800-10000
+Obj14=801-10000
+Obj15=802-10000
+Obj16=803-10000
+Obj17=908-10000
+Obj18=907-10000
+Obj19=934-10000
+Obj20=959-10000
+BackUp=1
+Domable=0
+
+[NPC143] ' Trader
+Name=Trader (NO SE USA)
+NpcType=9
+Desc=Hola guerrero. Si deseas cambiar tus trofeos por items únicos, tipea /CAMBIAR.
+Head=208
+Body=157
+Heading=3
+Movement=0
+Attackable=0
+Comercia=0
+Hostile=0
+NROITEMS=0
+
+
+[NPC144] ' FERRETERO
+Name=Ferretero Herramientas
+Desc=Pieles y Lingotes Solo Testeo
+Head=7
+Body=100
+Heading=3
+Movement=1
+Attackable=0
+Comercia=1
+Hostile=0
+TipoItems=20
+NROITEMS=1
+Obj1=386-1
+Obj2=387-1000
+Obj3=388-1000
+Obj4=414-1000
+Obj5=415-1000
+Obj6=416-1000
+BackUp=1
+
+[NPC145]
+Name=Croupier
+NpcType=10
+desc=Si deseas utilizar la Ruleta, tipea /RULETA !
+head=9
+body=195
+heading=3
+movement=1
+attackable=0
+comercia=0
+hostile=0
+NROITEMS=0
+
+[NPC146]
+Name=Quester
+NpcType=11
+desc=Si deseas realizar una Quest tipea /QUEST!
+head=8
+body=194
+heading=3
+movement=1
+attackable=0
+comercia=0
+hostile=0
+NROITEMS=0
+
+[NPC147] 'Pirata
+Name=Vendedor de Pasajes
+Info=ASD
+Desc=Yo vendo los pasajes a las diferentes Ciudades! Una vez que tengas uno, haz click en mí y utiliza tu pasaje!
+Body=196
+Head=5
+NpcType=12
+Heading=3
+Movement=1
+Attackable=0
+Comercia=1
+TipoItems=36
+Hostile=0
+Alineacion=0
+ReSpawn=0
+NROITEMS=5
+Obj1=1083-10000
+Obj2=1084-10000
+Obj3=1085-10000
+Obj4=1086-10000
+Obj5=1149-10000
+BackUp=1
+Domable=0
+
+[NPC148]
+Name=Cirujano
+NpcType=13
+desc=Si deseas cambiar tu horripilante cara, tipea /CIRUJIA! Te costara 10.000 monedas de oro
+head=11
+body=93
+heading=3
+movement=1
+attackable=0
+comercia=0
+hostile=0
+NROITEMS=0
+
+[NPC149]
+Name=Duelero
+NpcType=18
+desc=Si deseas batirte a duelo con alguien, tipea /DUELO. Te costara 10.000 monedas de oro
+head=172
+body=113
+heading=3
+movement=1
+attackable=0
+comercia=0
+hostile=0
+NROITEMS=0
+
+[NPC150]
+Name=Ermitano
+NpcType=16
+desc=Yo soy el Ermitaño de este bosque... Si tienes trofeos, tipea /CAMBIAR. Tengo algunos items que te podrían interesar!
+head=7
+body=47
+heading=3
+movement=1
+attackable=0
+comercia=0
+hostile=0
+NROITEMS=0
+
+[NPC151] 'NPC
+Name=Gobernador
+Desc=Hola, soy el gobernador de estas tierras! Tipea /HOGAR para hacerte ciudadano de aquí!
+Head=0
+Body=4
+Heading=3
+NpcType=10
+Movement=1
+Attackable=0
+Comercia=0
+Domable=0
+
+[NPC152]
+Name=Secuás del Rey
+NpcType=15
+desc=Psst! Oye, soy el secuás del Rey... Tipea /SOBORNAR si quieres perder un ciudadano matado. Te costara 100.000 monedas de oro!
+head=7
+body=128
+heading=3
+movement=1
+attackable=0
+comercia=0
+hostile=0
+NROITEMS=0
+
+[NPC153]
+Name=Trader de Puntos
+NpcType=14
+desc=Si deseas cambiar tus puntos de usuario tipea /PUNTOS !
+Head=208
+Body=157
+heading=3
+movement=1
+attackable=0
+comercia=0
+hostile=0
+NROITEMS=0
+
+[NPC154]
+Name=Trader de Trofeos y Runas
+NpcType=17
+desc=Si deseas cambiar tus Trofeos y Runas tipea /TRADE !
+Head=206
+Body=201
+heading=3
+movement=1
+attackable=0
+comercia=0
+hostile=0
+NROITEMS=0
+
+[NPC155] 'NPC
+Name=Vagabundo
+Desc=Hemos sido atacados por las Hordas del Caos! Cuando necesitabamos ayuda las Fuerzas Armadas no aparecieron. Muchos viajeros decidieron marcharse y esto es lo que nos queda!
+Head=7
+Body=47
+Heading=3
+Movement=2
+Alineacion=0
+ReSpawn=0
+
+[NPC156] 'NPC
+Name=Aldeano
+Desc=El mundo de Lapsus es demasiado grande para conocerlo todo, ¿no crees?
+Head=9
+Body=1
+Heading=3
+Movement=2
+Comercia=1
+Alineacion=0
+ReSpawn=0
+
+
+[NPC157] 'NPC
+Name=Aldeano Ullathorpe
+Desc=¡Lucha por nuestro Rey!
+Head=0
+Body=143
+Heading=3
+Movement=2
+Comercia=1
+Alineacion=0
+ReSpawn=0
+
+[NPC158]
+Name=Guerras Sala Gulfas Morgolock
+NpcType=19
+desc=Bienvenido a la sala Gulfas Morgolock. Tipea /GUERRA si deseas desafiar a otro clan en guerra, o /IRGUERRA para participar de una guerra en esta sala.
+salaGuerra=1
+Head=554
+Body=240
+heading=3
+movement=1
+attackable=0
+comercia=0
+hostile=0
+NROITEMS=0
+
+[NPC159]
+Name=Guerras Sala Cucsifae
+NpcType=19
+desc=Bienvenido a la sala Cucsifae. Tipea /GUERRA si deseas desafiar a otro clan en guerra, o /IRGUERRA para participar de una guerra en esta sala.
+salaGuerra=2
+Head=204
+Body=191
+heading=3
+movement=1
+attackable=0
+comercia=0
+hostile=0
+NROITEMS=0

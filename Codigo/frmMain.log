@@ -1,0 +1,28 @@
+Line 32: Class InetCtlsObjects.Inet of control Inet2 was not a loaded control class.
+Line 39: Class InetCtlsObjects.Inet of control Inet4 was not a loaded control class.
+Line 46: Class InetCtlsObjects.Inet of control Inet1 was not a loaded control class.
+Line 136: Class InetCtlsObjects.Inet of control Inet7 was not a loaded control class.
+Line 143: Class InetCtlsObjects.Inet of control Inet6 was not a loaded control class.
+Line 156: Class InetCtlsObjects.Inet of control Inet5 was not a loaded control class.
+Line 214: Class InetCtlsObjects.Inet of control Inet3 was not a loaded control class.
+Line 35: The property name _ExtentX in Inet2 is invalid.
+Line 36: The property name _ExtentY in Inet2 is invalid.
+Line 37: The property name _Version in Inet2 is invalid.
+Line 42: The property name _ExtentX in Inet4 is invalid.
+Line 43: The property name _ExtentY in Inet4 is invalid.
+Line 44: The property name _Version in Inet4 is invalid.
+Line 49: The property name _ExtentX in Inet1 is invalid.
+Line 50: The property name _ExtentY in Inet1 is invalid.
+Line 51: The property name _Version in Inet1 is invalid.
+Line 139: The property name _ExtentX in Inet7 is invalid.
+Line 140: The property name _ExtentY in Inet7 is invalid.
+Line 141: The property name _Version in Inet7 is invalid.
+Line 146: The property name _ExtentX in Inet6 is invalid.
+Line 147: The property name _ExtentY in Inet6 is invalid.
+Line 148: The property name _Version in Inet6 is invalid.
+Line 159: The property name _ExtentX in Inet5 is invalid.
+Line 160: The property name _ExtentY in Inet5 is invalid.
+Line 161: The property name _Version in Inet5 is invalid.
+Line 217: The property name _ExtentX in Inet3 is invalid.
+Line 218: The property name _ExtentY in Inet3 is invalid.
+Line 219: The property name _Version in Inet3 is invalid.

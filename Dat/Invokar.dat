@@ -1,0 +1,24 @@
+'#################### LISTA DE SPAWN #############################
+[INIT]
+NumNPCs=6
+
+
+[LIST]
+
+NI1=5
+NN1=Sacerdote
+
+NI2=14
+NN2=Pociones 
+
+NI3=24
+NN3=Boveda
+
+NI4=8
+NN4=Comida
+
+NI5=15
+NN5=Bebida
+
+NI6=80
+NN6=Mercader

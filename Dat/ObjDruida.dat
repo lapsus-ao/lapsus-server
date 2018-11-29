@@ -1,0 +1,35 @@
+[INIT]
+NumObjs=11
+
+[Obj1] ' Poción Violeta
+Index=166
+
+[Obj2] ' Poción Roja
+Index=38
+
+[Obj3] ' Poción Azul
+Index=37
+
+[Obj4] ' Poción Amarilla
+Index=36
+
+[Obj5] ' Poción Verde
+Index=39
+
+[Obj6] ' Poción Roja D
+Index=808
+
+[Obj7] ' Poción Azul D
+Index=811
+
+[Obj8] ' Poción Amarilla D
+Index=806
+
+[Obj9] ' Poción Verde D
+Index=809
+
+[Obj10] ' Poción de Energía
+Index=928
+
+[Obj11] ' Poción de Remo
+Index=1122

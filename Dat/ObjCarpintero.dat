@@ -1,0 +1,44 @@
+[INIT]
+NumObjs=14
+
+[Obj1] ' Flecha
+Index=480
+
+[Obj2] ' Flecha + 1
+Index=551
+
+[Obj3] ' Flecha + 2
+Index=552
+
+[Obj4] ' Flecha + 3
+Index=553
+
+[Obj5] ' Arco de Oro
+Index=721
+
+[Obj6] ' Arco Perla Azul
+Index=723
+
+[Obj7] ' Arco R
+Index=1001
+
+[Obj8] ' Arco Argentum
+Index=1002
+
+[Obj9] ' Ballesta
+Index=730
+
+[Obj10] 'Laud Magico
+Index=696
+
+[Obj11] 'Laud Magico
+Index=1082
+
+[Obj12] 'Barca
+Index=1105
+
+[Obj13] 'Galera
+Index=475
+
+[Obj14] 'Galeon
+Index=476

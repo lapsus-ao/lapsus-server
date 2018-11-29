@@ -1,0 +1,92 @@
+[INIT]
+Cant=10
+
+ 'CHOTS | Lobos
+[QUEST1]
+Npc=501
+Cant=20
+Oro=0
+Item=205
+Puntos=0
+Nombre=¿Lobo, estás?
+
+ 'CHOTS | Orcos
+[QUEST2]
+Npc=522
+Cant=15
+Oro=10000
+Item=530
+Puntos=1
+Nombre=Viejos feos como monos
+
+ 'CHOTS | Ogros
+[QUEST3]
+Npc=541
+Cant=10
+Oro=15000
+Item=361
+Puntos=3
+Nombre=Todo un palo
+
+ 'CHOTS | Lord Orco
+[QUEST4]
+Npc=555
+Cant=15
+Oro=30000
+Item=0
+Puntos=5
+Nombre=Roto y mal parado
+
+ 'CHOTS | Demonios
+[QUEST5]
+Npc=543
+Cant=5
+Oro=50000
+Item=0
+Puntos=10
+Nombre=Cruz Diablo
+
+ 'CHOTS | Brujas
+[QUEST6]
+Npc=550
+Cant=10
+Oro=75000
+Item=0
+Puntos=15
+Nombre=Brujas de alma sencilla
+
+ 'CHOTS | Draquitos
+[QUEST7]
+Npc=509
+Cant=15
+Oro=100000
+Item=0
+Puntos=20
+Nombre=Aliento de dragon
+
+ 'CHOTS | Golems
+[QUEST8]
+Npc=576
+Cant=3
+Oro=125000
+Item=0
+Puntos=30
+Nombre=Golem de paternal
+
+ 'CHOTS | Ogro Armado
+[QUEST9]
+Npc=577
+Cant=10
+Oro=150000
+Item=0
+Puntos=50
+Nombre=Vencedores vencidos
+
+ 'CHOTS | Lobo Blanco
+[QUEST10]
+Npc=602
+Cant=100
+Oro=0
+Item=0
+Puntos=100
+Nombre=Cordero atado
